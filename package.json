@@ -4,6 +4,7 @@
   "description": "![cf](http://i.imgur.com/7v5ASc8.png) Lab Submission Instructions ============================================================================",
   "main": "index.js",
   "dependencies": {
+    "eslint": "^5.14.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jest": "^22.3.0",
     "express": "^4.16.4",
@@ -11,7 +12,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose --coverage",
+    "lint": "eslint '**/*.js'"
   },
   "author": "",
   "license": "ISC"

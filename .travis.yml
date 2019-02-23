@@ -3,4 +3,5 @@ node_js:
   - "9"
 
 script:
-  - jest --coverage
+  - npm run test
+  - npm run lint
