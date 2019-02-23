@@ -1,11 +1,25 @@
-'use script';
+'use strict';
 
 const fs = require('fs');
 
-let buffer = Buffer.from('Larry Moe Curly');
-console.log(buffer)
-// write
-fs.writeFile('files/loop.js', buffer, (err) => {
-  if (err ) { throw err; }
-  console.log('savedfile');
+
+
+const manipulationData = function() {
+
+  const loopFunctionString = `['Larry','Moe','Curly'].forEach( stooge => console.log(stooge));`;
+  const loopFunctionStringLength = loopFunctionString.length;
+  const buffer = Buffer.allocUnsafe(loopFunctionStringLength);
+
+  for (let i = 0; i <= loopFunctionStringLength; i++) {
+    buffer.fill(loopFunctionString);
+  }
+  return buffer;
+};
+//write to loop.js file
+fs.writeFile('files/loop.js', manipulationData(), (err) => {
+  if (err) {
+    throw err;
+  }
 });
+
+module.exports = manipulationData;

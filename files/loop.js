@@ -1,1 +1,1 @@
-Larry Moe Curly
+['Larry','Moe','Curly'].forEach( stooge => console.log(stooge));
