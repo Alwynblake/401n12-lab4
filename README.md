@@ -1,6 +1,19 @@
 ![cf](http://i.imgur.com/7v5ASc8.png) Lab Submission Instructions
 ============================================================================
+# 401n12-lab4
+lab4
 
+## Project Name
+lab4
+https://travis-ci.com/Alwynblake/401n12-lab4
+
+### Author: Alistair Blake
+
+### Links and Resources
+repo https://github.com/Alwynblake/401n12-lab4
+https://travis-ci.com/Alwynblake/401n12-lab4
+back-end
+front-end https://lab4-401n12.herokuapp.com/
 ## Canvas Submission
 * Link to the README.md in your lab repo
 * **Code Sandbox Submissions**
