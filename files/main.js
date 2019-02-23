@@ -2,19 +2,24 @@
 
 const fs = require('fs');
 
-const loopFunctionString = `['Larry','Moe','Curly'].forEach( stooge => console.log(stooge));`;
 
-const loopFunctionStringLength = loopFunctionString.length;
 
-const buffer = Buffer.allocUnsafe(loopFunctionStringLength);
+const manipulationData = function() {
 
-for (let i = 0; i <= loopFunctionStringLength; i++) {
-  buffer.fill(loopFunctionString);
-}
+  const loopFunctionString = `['Larry','Moe','Curly'].forEach( stooge => console.log(stooge));`;
+  const loopFunctionStringLength = loopFunctionString.length;
+  const buffer = Buffer.allocUnsafe(loopFunctionStringLength);
 
-fs.writeFile('files/loop.js', buffer, (err) => {
+  for (let i = 0; i <= loopFunctionStringLength; i++) {
+    buffer.fill(loopFunctionString);
+  }
+  return buffer;
+};
+//write to loop.js file
+fs.writeFile('files/loop.js', manipulationData(), (err) => {
   if (err) {
     throw err;
   }
-  console.log('filesaved');
 });
+
+module.exports = manipulationData;
