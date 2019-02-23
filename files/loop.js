@@ -6,15 +6,16 @@ console.log(os.endiannes());
 
 
 //example
-let buffer = Buffer.from('John');
+let buffer = Buffer.from('Larry Moe Curly');
 console.log(buffer);
 console.log(buffer.toString());
-
+// change the first letter to 'Z' hex value
 buffer[0] = 0x5A;
 console.log(buffer);
 // convert buffer back to a string
 console.log(buffer.toString());
 
+// convert the second letter to 'a' Ascii value
 buffer[1] = 97;
 console.log(buffer);
 console.log(buffer.toString());
@@ -31,7 +32,6 @@ const stringify = (buffer) => {
 console.log( stringify(buffer) );
 // read the buffer and convert it to an integer
 console.log( buffer.readInt16LE(0));
-console.log( buffer.readInt16BE(3));
 
 // write
 fs.writeFile('./main.js', buffer, (err,data) => {
