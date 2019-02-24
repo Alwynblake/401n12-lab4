@@ -34,24 +34,10 @@ front-end https://lab4-401n12.herokuapp.com/
   * Ensure that your repository/branch is connected to a dyno at heroku.com
     * Create a new one for each day that contains a server deployment
     
-## Configuration
- Configure the root of your code folder with the following files and directories. Thoughtfully name and organize any additional configuration or module files.
- * **README.md** - contains your lab documentation
- * **.env** - contains env variables (should be git ignored)
- * **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file 
- * **.eslintrc** - contains the course linter configuratoin
- * **.eslintignore** - contains the course linter ignore configuration
- * **.travis.yml** - contains the course linter ignore configuration
- * **package.json** - contains npm package config
-   * create a `lint` script for running eslint (eslint **/*.js)
-   * create a `test` script for running tests
-   * create a `start` script for running your server
- * **/\_\_tests\_\_/** - contains unit tests
- * **/docs** - Where your documentation will reside
- * **/docs/config**
- * **/docs/config/jsdoc.config.json** 
-   * JSDOC Config File
-   * Edit this for each lab, if your folder structure is different
+## Assignment 1: Code that writes code …
+ Using only buffers and bit manipulation, generate a file in the files folder called loop.js that initiates an array with 3 people’s names, iterates them with a forEach loop, and console.log’s each value.
+ You may not use Buffer.from() to simply create a buffer from chunks of your target code. Rather, you will need to work character by character.
+ Verify your work by running node loop.js from within the files folder and seeing the array items printed out.
  
 ## Deployment - Server Based Labs
  * Your server must be deployed at Heroku
