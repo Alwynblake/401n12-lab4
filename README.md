@@ -4,7 +4,8 @@
 lab4
 
 ## Project Name
-lab4
+[![Build Status](https://travis-ci.com/Alwynblake/401n12-lab4.svg?branch=master)](https://travis-ci.com/Alwynblake/401n12-lab4)
+
 https://travis-ci.com/Alwynblake/401n12-lab4
 
 ### Author: Alistair Blake
